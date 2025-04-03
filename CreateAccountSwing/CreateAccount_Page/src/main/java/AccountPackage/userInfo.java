@@ -1,5 +1,4 @@
 package AccountPackage;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,7 +8,7 @@ public class userInfo {
     private static final String user = "root";
     private static final String password = "";
 
-    public static void saveLogin(){
+    public static <Connection> void saveLogin(){
         String sql = "INSERT INTO logform(userName,email,password) values(?, ?, ?)";
 
         try(Connection connection = DriverManager.getConnection(url,user,password);
