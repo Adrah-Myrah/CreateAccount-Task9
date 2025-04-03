@@ -5,7 +5,6 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Dashboard {
-
     static JPanel mainDashboard;
     static JLabel label;
 
@@ -13,8 +12,6 @@ public class Dashboard {
 
         Dashboard1();
     }
-
-
     public static JPanel Dashboard1(){
         mainDashboard = new JPanel();
         mainDashboard.setPreferredSize(new Dimension(1000,800));
