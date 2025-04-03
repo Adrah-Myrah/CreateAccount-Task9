@@ -3,5 +3,7 @@ module CreateAccount.Page {
     exports AccountPackage;
     requires Dashboard.Page;
     requires java.sql;
+    exports DashboardPackage;
+    requires java.desktop;
 
 }
