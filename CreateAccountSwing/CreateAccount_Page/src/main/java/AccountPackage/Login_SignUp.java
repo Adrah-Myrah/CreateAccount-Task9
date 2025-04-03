@@ -21,7 +21,7 @@ public class Login_SignUp {
     public JFrame Log(){
         mainFrame = new JFrame("Welcome");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.setSize(new Dimension(1000,800));
+        mainFrame.setSize(new Dimension(1500,900));
         mainFrame.setLocationRelativeTo(null);
         mainFrame.add(this.Panel1());
         mainFrame.setVisible(true);
