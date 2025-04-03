@@ -1,5 +1,4 @@
 package AccountPackage;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -19,15 +18,14 @@ public class UserInfo {
             preparedStatement.setString(2, email);
             preparedStatement.setString(3, password);
 
-            // Execute update
-            int rowsAffected = preparedStatement.executeUpdate();
+               int rowsAffected = preparedStatement.executeUpdate();
             if (rowsAffected > 0) {
                 System.out.println("Data saved successfully!");
             } else {
                 System.out.println("No data was saved.");
             }
         } catch (Exception e) {
-            // Print detailed error for debugging
+
             System.err.println("Error: " + e.getMessage());
             e.printStackTrace();
         }
