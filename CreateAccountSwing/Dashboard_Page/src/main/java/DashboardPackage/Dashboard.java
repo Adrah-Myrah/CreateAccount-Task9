@@ -1,6 +1,5 @@
 package DashboardPackage;
-import java.awt.Dimension;
-import java.awt.Font;
+
 import java.sql.Connection;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
