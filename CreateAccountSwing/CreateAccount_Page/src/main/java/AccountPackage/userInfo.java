@@ -13,7 +13,6 @@ public class UserInfo {
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            // Set parameters for the query
             preparedStatement.setString(1, userName);
             preparedStatement.setString(2, email);
             preparedStatement.setString(3, password);
@@ -22,7 +21,7 @@ public class UserInfo {
             if (rowsAffected > 0) {
                 System.out.println("Data saved successfully!");
             } else {
-                System.out.println("No data was saved.");
+                System.out.println("unsuccessful data save.");
             }
         } catch (Exception e) {
 
