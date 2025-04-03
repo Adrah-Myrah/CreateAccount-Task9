@@ -1,13 +1,9 @@
 package DashboardPackage;
 
 import java.sql.Connection;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import javax.swing.*;
 import java.awt.*;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+
 public class Dashboard {
 
     static JPanel mainDashboard;
