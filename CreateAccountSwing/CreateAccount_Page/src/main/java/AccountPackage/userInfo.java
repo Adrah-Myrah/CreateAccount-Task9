@@ -7,6 +7,8 @@ public class UserInfo {
     private static final String URL = "jdbc:mysql://localhost:3306/logincredentials_db";
     private static final String USER = "root";
     private static final String PASSWORD = "";
+
+
     public static void saveLogin(String userName, String email, String password) {
         String sql = "INSERT INTO logform(userName, email, password) VALUES(?, ?, ?)";
 
